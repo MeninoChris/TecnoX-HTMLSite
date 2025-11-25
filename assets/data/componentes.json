@@ -1,0 +1,296 @@
+{
+  "componentes": {
+    "cpu": [
+      {
+        "id": "cpu-1",
+        "name": "Intel Core i5-12400",
+        "brand": "Intel",
+        "model": "i5-12400",
+        "price": 899,
+        "socket": "LGA1700",
+        "cores": 6,
+        "threads": 12,
+        "baseClock": "2.5GHz",
+        "turboClock": "4.4GHz",
+        "tdp": 65
+      },
+      {
+        "id": "cpu-2",
+        "name": "AMD Ryzen 5 5600X",
+        "brand": "AMD",
+        "model": "Ryzen 5 5600X",
+        "price": 1299,
+        "socket": "AM4",
+        "cores": 6,
+        "threads": 12,
+        "baseClock": "3.7GHz",
+        "turboClock": "4.6GHz",
+        "tdp": 65
+      },
+      {
+        "id": "cpu-3",
+        "name": "Intel Core i7-12700K",
+        "brand": "Intel",
+        "model": "i7-12700K",
+        "price": 1899,
+        "socket": "LGA1700",
+        "cores": 12,
+        "threads": 20,
+        "baseClock": "3.6GHz",
+        "turboClock": "5.0GHz",
+        "tdp": 125
+      },
+      {
+        "id": "cpu-4",
+        "name": "AMD Ryzen 7 5800X",
+        "brand": "AMD",
+        "model": "Ryzen 7 5800X",
+        "price": 1699,
+        "socket": "AM4",
+        "cores": 8,
+        "threads": 16,
+        "baseClock": "3.8GHz",
+        "turboClock": "4.7GHz",
+        "tdp": 105
+      }
+    ],
+    "gpu": [
+      {
+        "id": "gpu-1",
+        "name": "NVIDIA GTX 1660 Super",
+        "brand": "NVIDIA",
+        "model": "GTX 1660 Super",
+        "price": 1599,
+        "vram": "6GB GDDR6",
+        "memoryBus": "192-bit",
+        "powerConnectors": "8-pin",
+        "tdp": 125
+      },
+      {
+        "id": "gpu-2",
+        "name": "AMD RX 6600",
+        "brand": "AMD",
+        "model": "RX 6600",
+        "price": 1899,
+        "vram": "8GB GDDR6",
+        "memoryBus": "128-bit",
+        "powerConnectors": "8-pin",
+        "tdp": 132
+      },
+      {
+        "id": "gpu-3",
+        "name": "NVIDIA RTX 3060 Ti",
+        "brand": "NVIDIA",
+        "model": "RTX 3060 Ti",
+        "price": 2899,
+        "vram": "8GB GDDR6",
+        "memoryBus": "256-bit",
+        "powerConnectors": "12-pin",
+        "tdp": 200
+      },
+      {
+        "id": "gpu-4",
+        "name": "AMD RX 6700 XT",
+        "brand": "AMD",
+        "model": "RX 6700 XT",
+        "price": 3299,
+        "vram": "12GB GDDR6",
+        "memoryBus": "192-bit",
+        "powerConnectors": "8+6-pin",
+        "tdp": 230
+      }
+    ],
+    "ram": [
+      {
+        "id": "ram-1",
+        "name": "Corsair Vengeance 8GB",
+        "brand": "Corsair",
+        "model": "Vengeance LPX",
+        "price": 299,
+        "capacity": "8GB",
+        "type": "DDR4",
+        "speed": "3200MHz",
+        "modules": "1x8GB"
+      },
+      {
+        "id": "ram-2",
+        "name": "Kingston Fury 16GB",
+        "brand": "Kingston",
+        "model": "Fury Beast",
+        "price": 499,
+        "capacity": "16GB",
+        "type": "DDR4",
+        "speed": "3600MHz",
+        "modules": "2x8GB"
+      },
+      {
+        "id": "ram-3",
+        "name": "Corsair Dominator 32GB",
+        "brand": "Corsair",
+        "model": "Dominator Platinum",
+        "price": 899,
+        "capacity": "32GB",
+        "type": "DDR4",
+        "speed": "4000MHz",
+        "modules": "2x16GB"
+      },
+      {
+        "id": "ram-4",
+        "name": "G.Skill Trident Z5 16GB",
+        "brand": "G.Skill",
+        "model": "Trident Z5",
+        "price": 699,
+        "capacity": "16GB",
+        "type": "DDR5",
+        "speed": "5600MHz",
+        "modules": "2x8GB"
+      }
+    ],
+    "storage": [
+      {
+        "id": "storage-1",
+        "name": "Samsung 970 EVO Plus 500GB",
+        "brand": "Samsung",
+        "model": "970 EVO Plus",
+        "price": 399,
+        "capacity": "500GB",
+        "type": "NVMe SSD",
+        "interface": "M.2",
+        "readSpeed": "3500MB/s",
+        "writeSpeed": "3300MB/s"
+      },
+      {
+        "id": "storage-2",
+        "name": "WD Blue 1TB HDD",
+        "brand": "Western Digital",
+        "model": "Blue",
+        "price": 249,
+        "capacity": "1TB",
+        "type": "HDD",
+        "interface": "SATA 3",
+        "rotation": "7200RPM",
+        "cache": "64MB"
+      },
+      {
+        "id": "storage-3",
+        "name": "Crucial MX500 1TB",
+        "brand": "Crucial",
+        "model": "MX500",
+        "price": 499,
+        "capacity": "1TB",
+        "type": "SATA SSD",
+        "interface": "SATA 3",
+        "readSpeed": "560MB/s",
+        "writeSpeed": "510MB/s"
+      },
+      {
+        "id": "storage-4",
+        "name": "Samsung 980 PRO 1TB",
+        "brand": "Samsung",
+        "model": "980 PRO",
+        "price": 899,
+        "capacity": "1TB",
+        "type": "NVMe SSD",
+        "interface": "M.2 PCIe 4.0",
+        "readSpeed": "7000MB/s",
+        "writeSpeed": "5000MB/s"
+      }
+    ],
+    "motherboard": [
+      {
+        "id": "mb-1",
+        "name": "ASUS Prime B660M-A",
+        "brand": "ASUS",
+        "model": "Prime B660M-A",
+        "price": 699,
+        "socket": "LGA1700",
+        "chipset": "B660",
+        "ramType": "DDR4",
+        "maxRam": "128GB",
+        "formFactor": "mATX"
+      },
+      {
+        "id": "mb-2",
+        "name": "MSI B550 Gaming Plus",
+        "brand": "MSI",
+        "model": "B550 Gaming Plus",
+        "price": 899,
+        "socket": "AM4",
+        "chipset": "B550",
+        "ramType": "DDR4",
+        "maxRam": "128GB",
+        "formFactor": "ATX"
+      },
+      {
+        "id": "mb-3",
+        "name": "ASUS ROG Strix Z690-E",
+        "brand": "ASUS",
+        "model": "ROG Strix Z690-E",
+        "price": 1899,
+        "socket": "LGA1700",
+        "chipset": "Z690",
+        "ramType": "DDR5",
+        "maxRam": "128GB",
+        "formFactor": "ATX"
+      },
+      {
+        "id": "mb-4",
+        "name": "MSI X570 Tomahawk",
+        "brand": "MSI",
+        "model": "X570 Tomahawk",
+        "price": 1299,
+        "socket": "AM4",
+        "chipset": "X570",
+        "ramType": "DDR4",
+        "maxRam": "128GB",
+        "formFactor": "ATX"
+      }
+    ],
+    "powerSupply": [
+      {
+        "id": "psu-1",
+        "name": "Corsair CV550",
+        "brand": "Corsair",
+        "model": "CV550",
+        "price": 349,
+        "wattage": 550,
+        "efficiency": "80+ Bronze",
+        "modular": false,
+        "connectors": "Sufficient for basic builds"
+      },
+      {
+        "id": "psu-2",
+        "name": "EVGA 650 GQ",
+        "brand": "EVGA",
+        "model": "650 GQ",
+        "price": 499,
+        "wattage": 650,
+        "efficiency": "80+ Gold",
+        "modular": true,
+        "connectors": "Full modular"
+      },
+      {
+        "id": "psu-3",
+        "name": "Seasonic Focus GX-750",
+        "brand": "Seasonic",
+        "model": "Focus GX-750",
+        "price": 699,
+        "wattage": 750,
+        "efficiency": "80+ Gold",
+        "modular": true,
+        "connectors": "Full modular"
+      },
+      {
+        "id": "psu-4",
+        "name": "Corsair RM850x",
+        "brand": "Corsair",
+        "model": "RM850x",
+        "price": 899,
+        "wattage": 850,
+        "efficiency": "80+ Gold",
+        "modular": true,
+        "connectors": "Full modular"
+      }
+    ]
+  }
+}

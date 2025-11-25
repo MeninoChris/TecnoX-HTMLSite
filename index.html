@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoX - Guia de Tecnologia Básica</title>
+    <link rel="icon" href="assets/images/Logo.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+    <!-- Header fixo -->
+    <header class="header-fixo">
+        <div class="container-header">
+            <div class="logo">
+                <img src="assets/images/Logo.png" alt="TecnoX" class="logo-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 200 60\'><rect width=\'200\' height=\'60\' fill=\'#0f172a'/><text x=\'10\' y=\'38\' fill=\'#60a5fa\' font-family=\'Poppins, Arial\' font-size=\'28\'>TecnoX</text></svg>'">
+                <span class="logo-subtitle">Guia Tech</span>
+            </div>
+            <nav class="menu-navegacao">
+                <ul>
+                    <li><a href="index.html" class="ativo">Início</a></li>
+                    <li><a href="pages/pecas-computador/index.html">Peças de Computador</a></li>
+                    <li><a href="pages/guia-de-componentes/index.html">Guia de Componentes</a></li>
+                    <li><a href="pages/como-montar-pc/index.html">Como Montar um PC</a></li>
+                </ul>
+            </nav>
+            <div class="header-spacer"></div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Bem-vindo ao TecnoX</h2>
+                <p>Descubra o mundo da tecnologia de forma simples e prática</p>
+                <button class="btn-primary" onclick="window.location.href='pages/componentes/index.html'">Explorar Componentes</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h3>O que você vai aprender</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h4>Hardware Básico</h4>
+                        <p>Entenda os principais componentes de um computador e suas funções</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h4>Aprenda Passo a Passo</h4>
+                        <p>Conteúdo didático para todos os níveis de conhecimento</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💡</div>
+                        <h4>Dicas Práticas</h4>
+                        <p>Informações sobre compatibilidade e melhores práticas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components Preview -->
+        <section class="components-preview">
+            <div class="container">
+                <h3>Principais Componentes</h3>
+                <div class="components-grid">
+                    <div class="component-card">
+                        <div class="component-image">🖥️</div>
+                        <h4>Processador</h4>
+                        <p>O cérebro do computador</p>
+                    </div>
+                    <div class="component-card">
+                        <div class="component-image">🎮</div>
+                        <h4>Placa de Vídeo</h4>
+                        <p>Responsável pelos gráficos</p>
+                    </div>
+                    <div class="component-card">
+                        <div class="component-image">💾</div>
+                        <h4>Memória RAM</h4>
+                        <p>Armazenamento temporário</p>
+                    </div>
+                    <div class="component-card">
+                        <div class="component-image">💿</div>
+                        <h4>Armazenamento</h4>
+                        <p>HD ou SSD para seus dados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h3>Pronto para explorar tecnologia básica?</h3>
+                <p>Veja o guia completo ou navegue pelas peças do computador</p>
+                <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                    <a class="btn-primary" href="pages/guia-de-componentes/index.html">Ver Guia de Componentes</a>
+                    <a class="btn-secondary" href="pages/como-montar-pc/index.html">Como Montar um PC</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TecnoX - Todos os direitos reservados</p>
+            <p>Educando para o futuro tecnológico</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/global.js"></script>
+</body>
+</html>

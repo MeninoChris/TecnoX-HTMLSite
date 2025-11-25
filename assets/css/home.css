@@ -1,0 +1,250 @@
+/* Estilos específicos da página Home */
+
+/* Hero Section */
+.hero-section {
+    background: radial-gradient(1200px 600px at 10% -10%, #0ea5e9 0%, transparent 60%),
+                radial-gradient(1000px 500px at 90% 0%, #60a5fa 0%, transparent 60%),
+                linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: white;
+    padding: 4rem 0;
+    min-height: 220px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: .5px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Features Section */
+.features-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.features-section h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background-color: #f8fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #3b82f6;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.feature-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Components Preview */
+.components-preview {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+.components-preview h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.components-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.component-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.component-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.component-image {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.component-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.component-card p {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #0f172a 0%, #1f2937 100%);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.cta-section .btn-secondary {
+    color: #fff;
+    border-color: #fff;
+}
+
+.cta-section .btn-secondary:hover {
+    background-color: #fff;
+    color: #0f172a;
+}
+
+.cta-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .features-section,
+    .components-preview,
+    .cta-section {
+        padding: 3rem 0;
+    }
+    
+    .features-section h3,
+    .components-preview h3 {
+        font-size: 2rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .components-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .feature-card,
+    .component-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .features-grid,
+    .components-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .components-preview h3,
+    .features-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-icon,
+    .component-image {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peças de Computador - TecnoX</title>
+    <link rel="icon" href="../../assets/images/Logo.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/componentes.css">
+</head>
+<body>
+    <header class="header-fixo">
+        <div class="container-header">
+            <div class="logo">
+                <img src="../../assets/images/Logo.png" alt="TecnoX" class="logo-img">
+                <span class="logo-subtitle">Guia Tech</span>
+            </div>
+            <nav class="menu-navegacao">
+                <ul>
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="index.html" class="ativo">Peças de Computador</a></li>
+                    <li><a href="../guia-de-componentes/index.html">Guia de Componentes</a></li>
+                    <li><a href="../como-montar-pc/index.html">Como Montar um PC</a></li>
+                </ul>
+            </nav>
+            <div class="header-spacer"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="componentes-hero">
+            <div class="container">
+                <h2>Peças de Computador</h2>
+                <p>Entenda cada peça e sua função no sistema</p>
+            </div>
+        </section>
+
+        <section class="categorias-section">
+            <div class="container">
+                <h3>Categorias</h3>
+                <div class="categorias-grid">
+                    <div class="categoria-card" data-category="cpu">
+                        <div class="categoria-icon">🖥️</div>
+                        <h4>Processadores</h4>
+                        <p>O cérebro do computador</p>
+                    </div>
+                    <div class="categoria-card" data-category="gpu">
+                        <div class="categoria-icon">🎮</div>
+                        <h4>Placas de Vídeo</h4>
+                        <p>Processamento gráfico</p>
+                    </div>
+                    <div class="categoria-card" data-category="ram">
+                        <div class="categoria-icon">💾</div>
+                        <h4>Memórias RAM</h4>
+                        <p>Memória de trabalho</p>
+                    </div>
+                    <div class="categoria-card" data-category="storage">
+                        <div class="categoria-icon">💿</div>
+                        <h4>Armazenamento</h4>
+                        <p>HDs e SSDs</p>
+                    </div>
+                    <div class="categoria-card" data-category="motherboard">
+                        <div class="categoria-icon">🔌</div>
+                        <h4>Placas Mãe</h4>
+                        <p>Conecta tudo</p>
+                    </div>
+                    <div class="categoria-card" data-category="powerSupply">
+                        <div class="categoria-icon">⚡</div>
+                        <h4>Fontes</h4>
+                        <p>Energia para o sistema</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="componentes-lista">
+            <div class="container">
+                <h3>Componentes Disponíveis</h3>
+                <div class="filter-section">
+                    <input type="text" id="searchInput" placeholder="Buscar componentes..." class="search-input">
+                    <select id="categoryFilter" class="category-select">
+                        <option value="">Todas as categorias</option>
+                        <option value="Processador">Processadores</option>
+                        <option value="Placa de Vídeo">Placas de Vídeo</option>
+                        <option value="Memória RAM">Memórias RAM</option>
+                        <option value="Armazenamento">Armazenamento</option>
+                        <option value="Placa Mãe">Placas Mãe</option>
+                        <option value="Fonte de Alimentação">Fontes</option>
+                    </select>
+                </div>
+                <div class="componentes-grid">
+                    <!-- Cards estáticos (mesmos do site atual) -->
+                    <div class="componente-card">
+                        <div class="componente-header">
+                            <div class="componente-title">
+                                <h4>Intel Core i5-12400</h4>
+                                <div class="componente-brand">Intel i5-12400</div>
+                            </div>
+                            <div class="componente-price">R$ 899,00</div>
+                        </div>
+                        <div class="componente-category">Processador</div>
+                        <div class="componente-specs">
+                            <div class="spec-item"><span class="spec-label">Socket:</span><span class="spec-value">LGA1700</span></div>
+                            <div class="spec-item"><span class="spec-label">Cores:</span><span class="spec-value">6</span></div>
+                            <div class="spec-item"><span class="spec-label">Threads:</span><span class="spec-value">12</span></div>
+                            <div class="spec-item"><span class="spec-label">TDP:</span><span class="spec-value">65W</span></div>
+                        </div>
+                    </div>
+                    <div class="componente-card">
+                        <div class="componente-header">
+                            <div class="componente-title">
+                                <h4>AMD Ryzen 5 5600X</h4>
+                                <div class="componente-brand">AMD Ryzen 5 5600X</div>
+                            </div>
+                            <div class="componente-price">R$ 1.299,00</div>
+                        </div>
+                        <div class="componente-category">Processador</div>
+                        <div class="componente-specs">
+                            <div class="spec-item"><span class="spec-label">Socket:</span><span class="spec-value">AM4</span></div>
+                            <div class="spec-item"><span class="spec-label">Cores:</span><span class="spec-value">6</span></div>
+                            <div class="spec-item"><span class="spec-label">Threads:</span><span class="spec-value">12</span></div>
+                            <div class="spec-item"><span class="spec-label">TDP:</span><span class="spec-value">65W</span></div>
+                        </div>
+                    </div>
+                    <div class="componente-card">
+                        <div class="componente-header">
+                            <div class="componente-title">
+                                <h4>NVIDIA GTX 1660 Super</h4>
+                                <div class="componente-brand">NVIDIA GTX 1660 Super</div>
+                            </div>
+                            <div class="componente-price">R$ 1.599,00</div>
+                        </div>
+                        <div class="componente-category">Placa de Vídeo</div>
+                        <div class="componente-specs">
+                            <div class="spec-item"><span class="spec-label">VRAM:</span><span class="spec-value">6GB GDDR6</span></div>
+                            <div class="spec-item"><span class="spec-label">Barramento:</span><span class="spec-value">192-bit</span></div>
+                            <div class="spec-item"><span class="spec-label">Conectores:</span><span class="spec-value">8-pin</span></div>
+                            <div class="spec-item"><span class="spec-label">TDP:</span><span class="spec-value">125W</span></div>
+                        </div>
+                    </div>
+                    <div class="componente-card">
+                        <div class="componente-header">
+                            <div class="componente-title">
+                                <h4>Kingston Fury 16GB</h4>
+                                <div class="componente-brand">Kingston Fury Beast</div>
+                            </div>
+                            <div class="componente-price">R$ 499,00</div>
+                        </div>
+                        <div class="componente-category">Memória RAM</div>
+                        <div class="componente-specs">
+                            <div class="spec-item"><span class="spec-label">Capacidade:</span><span class="spec-value">16GB</span></div>
+                            <div class="spec-item"><span class="spec-label">Tipo:</span><span class="spec-value">DDR4</span></div>
+                            <div class="spec-item"><span class="spec-label">Velocidade:</span><span class="spec-value">3600MHz</span></div>
+                            <div class="spec-item"><span class="spec-label">Módulos:</span><span class="spec-value">2x8GB</span></div>
+                        </div>
+                    </div>
+                    <div class="componente-card">
+                        <div class="componente-header">
+                            <div class="componente-title">
+                                <h4>Samsung 970 EVO Plus 500GB</h4>
+                                <div class="componente-brand">NVMe M.2</div>
+                            </div>
+                            <div class="componente-price">R$ 399,00</div>
+                        </div>
+                        <div class="componente-category">Armazenamento</div>
+                        <div class="componente-specs">
+                            <div class="spec-item"><span class="spec-label">Tipo:</span><span class="spec-value">NVMe SSD</span></div>
+                            <div class="spec-item"><span class="spec-label">Interface:</span><span class="spec-value">M.2</span></div>
+                            <div class="spec-item"><span class="spec-label">Leitura:</span><span class="spec-value">3500MB/s</span></div>
+                            <div class="spec-item"><span class="spec-label">Escrita:</span><span class="spec-value">3300MB/s</span></div>
+                        </div>
+                    </div>
+                    <div class="componente-card">
+                        <div class="componente-header">
+                            <div class="componente-title">
+                                <h4>ASUS Prime B660M-A</h4>
+                                <div class="componente-brand">Chipset B660</div>
+                            </div>
+                            <div class="componente-price">R$ 699,00</div>
+                        </div>
+                        <div class="componente-category">Placa Mãe</div>
+                        <div class="componente-specs">
+                            <div class="spec-item"><span class="spec-label">Socket:</span><span class="spec-value">LGA1700</span></div>
+                            <div class="spec-item"><span class="spec-label">RAM:</span><span class="spec-value">DDR4</span></div>
+                            <div class="spec-item"><span class="spec-label">Máx RAM:</span><span class="spec-value">128GB</span></div>
+                            <div class="spec-item"><span class="spec-label">Formato:</span><span class="spec-value">mATX</span></div>
+                        </div>
+                    </div>
+                    <div class="componente-card">
+                        <div class="componente-header">
+                            <div class="componente-title">
+                                <h4>Corsair CV550</h4>
+                                <div class="componente-brand">80+ Bronze</div>
+                            </div>
+                            <div class="componente-price">R$ 349,00</div>
+                        </div>
+                        <div class="componente-category">Fonte de Alimentação</div>
+                        <div class="componente-specs">
+                            <div class="spec-item"><span class="spec-label">Potência:</span><span class="spec-value">550W</span></div>
+                            <div class="spec-item"><span class="spec-label">Modular:</span><span class="spec-value">Não</span></div>
+                            <div class="spec-item"><span class="spec-label">Eficiência:</span><span class="spec-value">80+ Bronze</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-educativa">
+            <div class="container">
+                <h3>Como escolher?</h3>
+                <div class="info-cards">
+                    <div class="info-card"><h4>Compatibilidade</h4><p>Placa-mãe e CPU devem ter o mesmo socket.</p></div>
+                    <div class="info-card"><h4>Orçamento</h4><p>Defina prioridades conforme seu uso.</p></div>
+                    <div class="info-card"><h4>Performance</h4><p>Equilibre CPU e GPU para evitar gargalos.</p></div>
+                    <div class="info-card"><h4>Futuro</h4><p>Considere possibilidades de upgrades.</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TecnoX - Todos os direitos reservados</p>
+            <p>Educando para o futuro tecnológico</p>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/global.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const searchInput = document.getElementById('searchInput');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const cards = Array.from(document.querySelectorAll('.componente-card'));
+
+        function applyFilter() {
+          const q = (searchInput.value || '').toLowerCase();
+          const cat = (categoryFilter.value || '').toLowerCase();
+          cards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            const category = card.querySelector('.componente-category').textContent.trim().toLowerCase();
+            const matchesSearch = !q || text.includes(q);
+            const matchesCategory = !cat || category === cat || category.includes(cat);
+            card.style.display = (matchesSearch && matchesCategory) ? 'block' : 'none';
+          });
+        }
+
+        searchInput.addEventListener('input', applyFilter);
+        categoryFilter.addEventListener('change', applyFilter);
+      });
+    </script>
+</body>
+</html>
+

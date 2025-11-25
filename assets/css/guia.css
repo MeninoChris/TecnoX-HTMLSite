@@ -1,0 +1,25 @@
+.guia-hero { 
+  background: radial-gradient(1200px 600px at 10% -10%, #0ea5e9 0%, transparent 60%),
+              radial-gradient(1000px 500px at 90% 0%, #60a5fa 0%, transparent 60%),
+              linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #fff; padding: 4rem 0; min-height: 220px; text-align: center; 
+}
+.guia-hero h2 { font-size: 2.5rem; font-weight: 800; }
+.guia-conteudo { padding: 2rem 0; }
+.guia-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.guia-card { background:#fff; border:1px solid #e5e7eb; border-radius:.75rem; padding:1.25rem; box-shadow:0 10px 15px -3px rgba(0,0,0,.1); }
+.guia-card h3{ margin-bottom:.5rem; color:#1f2937; }
+.guia-card p{ color:#374151; margin-bottom:.5rem; }
+.guia-card ul, .guia-card dl{ color:#374151; }
+.guia-card dl dt{ font-weight:600; }
+.guia-card dl dd{ margin:0 0 .5rem 0; }
+@media (max-width: 1024px){ .guia-grid{ grid-template-columns: repeat(2, 1fr);} }
+@media (max-width: 640px){ .guia-grid{ grid-template-columns: 1fr;} }
+
+.guia-extra { margin-top: 2rem; }
+.guia-tabela { width:100%; border-collapse: collapse; margin: 1rem 0; }
+.guia-tabela th, .guia-tabela td { border:1px solid #e5e7eb; padding:0.75rem; text-align:left; }
+.guia-tabela thead { background:#f3f4f6; }
+.guia-tabela tfoot td { text-align:center; font-size:0.9rem; color:#6b7280; }
+.guia-glossario dt { font-weight:700; }
+.guia-glossario dd { margin: 0 0 .5rem 0; color:#374151; }

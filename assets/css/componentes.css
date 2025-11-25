@@ -1,0 +1,329 @@
+/* Estilos específicos da página de componentes */
+
+/* Hero Section */
+.componentes-hero {
+    background: radial-gradient(1200px 600px at 10% -10%, #0ea5e9 0%, transparent 60%),
+                radial-gradient(1000px 500px at 90% 0%, #60a5fa 0%, transparent 60%),
+                linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: white;
+    padding: 4rem 0;
+    min-height: 220px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.componentes-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.componentes-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.componentes-hero h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.componentes-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Categorias Section */
+.categorias-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.categorias-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.categoria-card {
+    background-color: #f8fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #3b82f6;
+    background-color: #dbeafe;
+}
+
+.categoria-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.categoria-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.categoria-card p {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* Componentes Lista */
+.componentes-lista {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+.componentes-lista h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.filter-section {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 250px;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.category-select {
+    padding: 0.75rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    min-width: 200px;
+}
+
+.category-select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.componentes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.componente-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.componente-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #3b82f6;
+}
+
+.componente-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.componente-title {
+    flex: 1;
+}
+
+.componente-title h4 {
+    font-size: 1.1rem;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.componente-brand {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.componente-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #10b981;
+}
+
+.componente-specs {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.spec-label {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.spec-value {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* Info Educativa */
+.info-educativa {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.info-educativa h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.info-card {
+    background-color: #f8fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-left: 4px solid #3b82f6;
+}
+
+.info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.info-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .componentes-hero h2 {
+        font-size: 2rem;
+    }
+    
+    .categorias-section,
+    .componentes-lista,
+    .info-educativa {
+        padding: 3rem 0;
+    }
+    
+    .categorias-section h3,
+    .componentes-lista h3,
+    .info-educativa h3 {
+        font-size: 1.5rem;
+    }
+    
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .componentes-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .filter-section {
+        flex-direction: column;
+    }
+    
+    .search-input,
+    .category-select {
+        min-width: 100%;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .categorias-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .componente-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .componente-price {
+        align-self: flex-end;
+    }
+}
