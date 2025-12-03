@@ -26,12 +26,15 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(135deg, #0f172a 0%, #1f2937 100%);
+    background: radial-gradient(1200px 600px at 10% -10%, #0ea5e9 0%, transparent 60%),
+                radial-gradient(1000px 500px at 90% 0%, #60a5fa 0%, transparent 60%),
+                linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
     box-shadow: 0 8px 20px -10px rgba(0, 0, 0, 0.4);
     border-bottom: none;
     z-index: 1000;
     padding: 0.75rem 0;
     min-height: 72px;
+    color: white;
 }
 
 .container-header {
@@ -75,7 +78,7 @@ body {
 }
 
 .menu-navegacao a {
-    color: #cbd5e1;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     padding: 0.5rem 0.75rem;
@@ -83,6 +86,7 @@ body {
     transition: color 0.25s ease;
     letter-spacing: 0.2px;
     position: relative;
+    opacity: 0.9;
 }
 
 .menu-navegacao a::after {
@@ -92,7 +96,7 @@ body {
     right: 0;
     bottom: 0;
     height: 2px;
-    background: linear-gradient(90deg, #60a5fa 0%, #2563eb 100%);
+    background: white;
     border-radius: 2px;
     transform: scaleX(0);
     transform-origin: left;
@@ -101,7 +105,8 @@ body {
 
 .menu-navegacao a:hover,
 .menu-navegacao a.ativo {
-    color: #fff;
+    color: white;
+    opacity: 1;
 }
 
 .menu-navegacao a:hover::after,
@@ -126,10 +131,6 @@ body {
     vertical-align: middle;
     margin-right: 0.5rem;
     object-fit: contain;
-    padding: 4px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, rgba(96, 165, 250, 0.25), rgba(37, 99, 235, 0.25));
-    box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.35), 0 0 12px rgba(96, 165, 250, 0.6), 0 6px 12px rgba(0, 0, 0, 0.35);
 }
 
 .btn-login,
@@ -215,13 +216,27 @@ body {
     transform: translateY(-2px);
 }
 
+/* Layout principal */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 1rem 0 2rem;
+}
+
 /* Footer */
 .footer {
-    background-color: #1f2937;
+    background: radial-gradient(1200px 600px at 10% -10%, #0ea5e9 0%, transparent 60%),
+                radial-gradient(1000px 500px at 90% 0%, #60a5fa 0%, transparent 60%),
+                linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
     color: white;
     text-align: center;
     padding: 2rem 0;
-    margin-top: 0;
+    margin-top: auto;
 }
 
 .footer p {
